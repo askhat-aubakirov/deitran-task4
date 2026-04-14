@@ -1,4 +1,9 @@
 pandas
+numpy
 matplotlib
 yaml
 re
+networkx
+streamlit
+itertools
+json
