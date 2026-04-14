@@ -1,9 +1,2 @@
-pandas
-numpy
-matplotlib
-yaml
-re
-networkx
-streamlit
-itertools
-json
+streamlit==1.33.0
+pandas==2.2.2
