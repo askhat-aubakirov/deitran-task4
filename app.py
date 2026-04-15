@@ -34,7 +34,7 @@ def load_dataset(path: Path):
 
 
 # ---------- UI ----------
-st.title("📊 EDA Dashboard")
+st.title("Data Engineering Itransition TASK4 - Askhat Aubakirov")
 
 tabs = st.tabs(DATASETS)
 
@@ -130,4 +130,4 @@ for tab, dataset in zip(tabs, DATASETS):
         st.markdown("---")
 
 # ---------- FOOTER ----------
-st.caption("Precomputed EDA results • Fast • No recomputation")
+st.caption("Precomputed EDA results. Data processed with Pandas - see ipynb files. Dashboard built with Streamlit.")
