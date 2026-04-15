@@ -65,7 +65,7 @@ for tab, dataset in zip(tabs, DATASETS):
         authors_df = authors_df.sort_values(by=value_col, ascending=False)
 
         # ---------- TOP AUTHOR ----------
-        st.subheader("⭐ Top Author")
+        st.subheader("Top Author")
 
         top_author = authors_df.iloc[0]
 
@@ -75,7 +75,7 @@ for tab, dataset in zip(tabs, DATASETS):
         col2.metric("Purchases / Count", int(top_author[value_col]))
 
         # ---------- TOP 5 AUTHORS ----------
-        st.subheader("🏆 Top 5 Authors")
+        st.subheader("Top 5 Authors")
 
         top5 = authors_df.head(5)
 
@@ -86,15 +86,15 @@ for tab, dataset in zip(tabs, DATASETS):
         st.dataframe(top5, use_container_width=True)
 
         # ---------- TOP CUSTOMER ----------
-        st.subheader("👤 Top Customer")
+        st.subheader("Top Customer")
         st.dataframe(data["top_customer"], use_container_width=True)
 
         # ---------- TOP DAYS ----------
-        st.subheader("📅 Top 5 Revenue Days")
+        st.subheader("Top 5 Revenue Days")
         st.dataframe(data["top_days"], use_container_width=True)
 
         # ---------- DAILY REVENUE ----------
-        st.subheader("📈 Daily Revenue")
+        st.subheader("Daily Revenue")
 
         rev_df = data["daily_revenue"].copy()
 
@@ -109,7 +109,7 @@ for tab, dataset in zip(tabs, DATASETS):
         )
 
         # ---------- DOWNLOAD ----------
-        st.subheader("⬇️ Download Data")
+        st.subheader("Download Data")
 
         col1, col2 = st.columns(2)
 
